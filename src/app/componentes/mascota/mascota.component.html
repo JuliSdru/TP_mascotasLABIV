@@ -1,0 +1,8 @@
+<app-listado
+    [mascota]="mascota"
+    (detalle)="verDetalle($event)">
+</app-listado>
+<div *ngIf="mostrar == true">
+    <div class="tipo">La mascota es de tipo: {{mascota.tipo}}.</div>
+    <img [src]="mascota.imagen" alt="foto" srcset="">
+</div>

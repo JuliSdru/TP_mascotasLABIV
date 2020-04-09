@@ -1,0 +1,33 @@
+.PERRO, .GATO, .PEZ {
+    font-size: 15px;
+    padding: 10px;
+    width: 330px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+  
+}
+
+.detalle {
+    border: 1px solid black; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    margin:4px;
+    background-color: grey; /*color botón*/
+    color: black; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Open Sans', sans-serif; /*tipografía texto*/
+    border-radius: 0px; /*bordes redondos*/
+    
+}
+
+.PERRO {
+    color: red;
+}
+
+.GATO {
+    color: blue;
+}
+
+.PEZ {
+    color: green;
+}

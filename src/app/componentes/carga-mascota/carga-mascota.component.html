@@ -1,0 +1,50 @@
+
+
+
+<div class="box">
+    <br><br>
+    <table align="center">
+        <div>
+            <img src="assets/mascotaaa.jpg" class="imagen" >
+            <div class="titulo" align="center">
+                <h1>
+                    ¡Bienvenido!
+                    <br>
+                    Registre su mascota
+                </h1>    
+            </div>
+        </div>
+        <div>
+<div >
+    <div >
+        <br>
+    <br>
+    <br>
+       
+        <input type="text" placeholder="INGRESE NOMBRE" [(ngModel)]="nombre" class="text">
+    <br>
+    <br>
+    <br>
+        <input type="text" placeholder="INGRESE ENLACE URL" [(ngModel)]="imagen" class="url">
+        <br>
+    <br>
+    <br>
+        <select name="tipo" [(ngModel)]="tipo" class="tipo">
+            <br>
+    <br>
+    <br>
+            <option [value]="item" *ngFor="let item of listaTipo">{{item}}</option>
+        </select>
+        <th>
+        
+        <input type="button" value="REGISTAR" (click)="enviar($event)" class="btn" >
+    </th>
+    </div>
+
+    <div *ngFor="let mascota of lista; index as i" class="mascota">
+        <app-mascota 
+            [mascota]="mascota">
+        </app-mascota>
+    </div>
+</div>
+</div>
